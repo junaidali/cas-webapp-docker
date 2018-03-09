@@ -7,3 +7,7 @@ allprojects {
 task wrapper(type: Wrapper, description: "Gradle's wrapper") {
     gradleVersion = "2.10"
 }
+
+dependencies {
+  compile "org.apereo.cas:cas-server-support-ldap:${project.'cas.version'}"
+}
