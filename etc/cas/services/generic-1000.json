@@ -1,0 +1,14 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^(https|imaps)://.*",
+  "name" : "generic",
+  "id" : 1000,
+  "accessStrategy" : {
+    "@class" : "org.apereo.cas.services.RemoteEndpointServiceAccessStrategy",
+    "endpointUrl" : "https://localhost/vcl/casauth/index.php",
+    "acceptableResponseCodes" : "200,202"
+  },
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+  }
+}
